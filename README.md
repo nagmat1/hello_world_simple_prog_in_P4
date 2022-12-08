@@ -123,6 +123,48 @@ sending on interface enp193s0 to 192.168.1.3
 
 ```
 
+On host 2 and host 3 Run receive.py : 
+``` python3 receive.py  ```
+
+```
+I= enp2s0
+sniffing on enp2s0
+got a packet
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = b8:ce:f6:77:d7:6e
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 45
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xf775
+     src       = 192.168.1.1
+     dst       = 192.168.1.3
+     \options   \
+###[ TCP ]### 
+        sport     = 49848
+        dport     = 5201
+        seq       = 0
+        ack       = 0
+        dataofs   = 5
+        reserved  = 0
+        flags     = S
+        window    = 8192
+        chksum    = 0x8bc
+        urgptr    = 0
+        options   = []
+###[ Raw ]### 
+           load      = 'Salam'
+###[ Padding ]### 
+              load      = '\x00'
+```
 
 
 

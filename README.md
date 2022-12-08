@@ -83,5 +83,48 @@ bfshell> exit
 
 On host 1 with IP address 192.168.1.1:
 
+Send packets using send.py : ``` python3 send.py 192.168.1.3 "Salam" ```
+
+```
+IFACE= enp193s0
+sending on interface enp193s0 to 192.168.1.3
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = b8:ce:f6:77:d7:6e
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = 5
+     tos       = 0x0
+     len       = 45
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = tcp
+     chksum    = 0xf775
+     src       = 192.168.1.1
+     dst       = 192.168.1.3
+     \options   \
+###[ TCP ]### 
+        sport     = 60735
+        dport     = 5201
+        seq       = 0
+        ack       = 0
+        dataofs   = 5
+        reserved  = 0
+        flags     = S
+        window    = 8192
+        chksum    = 0xde34
+        urgptr    = 0
+        options   = []
+###[ Raw ]### 
+           load      = 'Salam'
+
+```
+
+
+
+
 
 
